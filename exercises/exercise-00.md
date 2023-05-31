@@ -1,4 +1,5 @@
 # Øvelse 0
+
 Dette er en simpel lille øvelse for at komme i gang med at bruge øvelses-repositoriet.
 
 Der er derfor flere trin, og mere beskrivende tekst end i de almindelige øvelser.
@@ -15,12 +16,13 @@ Der kommer løbende opdateringer - nye øvelser, eller rettelser til environment
 
 1. I Github Desktop, vælg Current Branch: main
 2. Derefter, tryk på "Choose a branch to merge into main"-knappen i bunden af branch-listen.
-3. Vælg "upstream/main" 
+3. Vælg "upstream/main"
 4. Hvis der er ændringer, tryk "Create a merge commit"-knappen. Hvis du ikke kan trykke på knappen, er der ikke ændringer.
 
 ## Lav en øvelse
 
 Vælg først den øvelse du vil lave, og lav en branch til den.
+
 1. Sikr dig at du står i Current Branch: main
 2. Tryk New branch og lav en ny branch med navnet på den øvelse du vil lave - du bestemmer selv systemet.
 3. Åbn projektet i Visual Studio Code
