@@ -15,15 +15,22 @@ async function getUsers() {
 }
 
 function displayUsers() {
-    const userList = document.querySelector("#userlist");
-    userList.innerHTML = "";
-
-    const adminUsers = users.filter(user => user.role === "admin")
-
-    adminUsers.forEach(user => {
-        const listItem = document.createElement("li")
-        const userName = document.createTextNode(`${user.name} (${user.active ? 'Active' : 'Inactive'})`);
-        listItem.appendChild(userName);
-        userList.appendChild(listItem);
-    })
+  for (const user of users) {
+      const html = /*html*/`
+      <li>${user.name} (${user.role}), Active: ${user.active}</li>`    
+  }
 }
+
+// function displayUsers() {
+//     const userList = document.querySelector("#userlist");
+//     userList.innerHTML = "";
+
+//     const adminUsers = users.filter(user => user.role === "admin")
+
+//     adminUsers.forEach(user => {
+//         const listItem = document.createElement("li")
+//         const userName = document.createTextNode(`${user.name} (${user.active ? 'Active' : 'Inactive'})`);
+//         listItem.appendChild(userName);
+//         userList.appendChild(listItem);
+//     })
+// }
