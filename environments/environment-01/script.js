@@ -16,8 +16,9 @@ async function getUsers() {
 
 function displayUsers() {
   for (const user of users) {
-      const html = /*html*/`
-      <li>${user.name} (${user.role}), Active: ${user.active}</li>`    
+    const html = /*html*/ `
+        <li>${user.name} (${user.role}), Active: ${user.active}</li>`;
+    document.querySelector("#userlist").insertAdjacentHTML("beforeend", html);
   }
 }
 
