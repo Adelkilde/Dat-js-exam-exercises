@@ -21,8 +21,14 @@ function displaySongList() {
 
   for (const song of playlist) {
     const html = /*html*/ `
-     <li>${song.artist}: ${song.title} (${song.duration})</li>
-     <button id="removeButton">Remove</button>`;
+     <li>${song.artist}: ${song.title} (${song.duration}) <button>Remove</button></li>`;
     document.querySelector("#songlist").insertAdjacentHTML("beforeend", html);
+    document.querySelector("#songlist li:last-child button").addEventListener("click", () => removeSong(song));
   }
+}
+
+function removeSong(FuckOuttaHere) {
+  console.log(FuckOuttaHere);
+  playlist = playlist.filter((song) => FuckOuttaHere !== song);
+  displaySongList();
 }
