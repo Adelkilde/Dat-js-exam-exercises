@@ -5,9 +5,7 @@ const students = [];
 
 function initApp() {
   console.log("JavaScript is running 🚀");
-  document
-    .querySelector("#create-student-form")
-    .addEventListener("submit", submitCreateForm);
+  document.querySelector("#create-student-form").addEventListener("submit", submitCreateForm);
 }
 
 function submitCreateForm(event) {
@@ -41,8 +39,6 @@ function showStudents(listOfStudents) {
               <td>${student.age}</td>
           </tr>
       `;
-    document
-      .querySelector("#students-table-body")
-      .insertAdjacentHTML("beforeend", html);
+    document.querySelector("#students-table-body").insertAdjacentHTML("beforeend", html);
   }
 }
