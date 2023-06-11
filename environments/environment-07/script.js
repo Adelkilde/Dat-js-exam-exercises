@@ -6,10 +6,6 @@ const students = [];
 function initApp() {
   console.log("JavaScript is running 🚀");
   document.querySelector("#create-student-form").addEventListener("submit", addStudent);
-  createStudent("John", "jobe@stud.kea.dk", 23);
-  createStudent("John", "joew@stud.kea.dk", 23);
-  createStudent("John", "jote@stud.kea.dk", 23);
-  createStudent("John", "joe@stud.kea.dk", 23);
   console.log(students);
 }
 
