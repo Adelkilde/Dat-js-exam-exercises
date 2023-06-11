@@ -4,15 +4,16 @@ window.addEventListener("load", initApp);
 const songs = [
   { artist: "Deftones", title: "Rosemary", duration: "3:21" },
   { artist: "Deftones", title: "Entombed", duration: "3:21" },
+  { artist: "Slipknot", title: "Iowa", duration: "3:21" },
   { artist: "Nickelback", title: "Far Away", duration: "3:21" },
   { artist: "Nickelback", title: "Savin' Me", duration: "3:21" },
-  { artist: "Slipknot", title: "Iowa", duration: "3:21" },
 ];
 
 function initApp() {
   console.log("JavaScript is running 🤘");
   document.querySelector("#add-song-form").addEventListener("submit", addSong);
   document.querySelector("#sort-songs-form").addEventListener("change", sortByClicked);
+  songs.sort((song1, song2) => song1.artist.localeCompare(song2.artist));
   displaySongs();
 }
 
